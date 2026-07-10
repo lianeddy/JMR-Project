@@ -4,6 +4,11 @@ export interface Facility {
   text: string;
 }
 
+export interface FacilityHighlight {
+  icon: string;
+  label: string;
+}
+
 export interface Distance {
   icon: string;
   place: string;
@@ -26,19 +31,26 @@ export interface BadgeStyle {
 export const NAV_LINKS: string[] = ["Home", "Fasilitas", "Unit", "Lokasi", "Kontak"];
 
 export const FACILITIES: Facility[] = [
-  { icon: "🔒", title: "Sistem Keamanan 24 Jam", text: "Kawasan dijaga penuh oleh petugas keamanan profesional selama 24 jam setiap hari." },
-  { icon: "🚆", title: "Akses Cepat ke Transportasi", text: "Hanya 10 menit ke Stasiun LRT Jatimulya dan Pintu Tol Bekasi Timur." },
-  { icon: "🌳", title: "Lingkungan Asri & Nyaman", text: "Kawasan hijau yang tertata rapi, sejuk, dan ramah untuk seluruh keluarga." },
-  { icon: "🕌", title: "Masjid JMR", text: "Fasilitas ibadah lengkap di dalam kawasan perumahan untuk kenyamanan warga." },
+  { icon: "shield", title: "One Gate System 24 Jam", text: "Satu akses masuk-keluar kawasan dengan pos jaga dan petugas keamanan berpatroli sepanjang hari." },
+  { icon: "train", title: "10 Menit ke Tol & LRT", text: "Pintu Tol Bekasi Timur dan Stasiun LRT Jatimulya dapat ditempuh singkat dari gerbang perumahan." },
+  { icon: "leaf", title: "Ruang Terbuka Hijau", text: "Taman kawasan dan jalur pejalan kaki yang teduh, dirancang untuk aktivitas keluarga sehari-hari." },
+  { icon: "mosque", title: "Masjid JMR", text: "Fasilitas ibadah lengkap di dalam kawasan perumahan untuk kenyamanan warga." },
+];
+
+export const FACILITY_HIGHLIGHTS: FacilityHighlight[] = [
+  { icon: "certificate", label: "Sertifikat SHM per Unit" },
+  { icon: "lightning", label: "Listrik Token 1300–2200 VA" },
+  { icon: "drop", label: "Air Bersih PDAM & Sumur Bor" },
+  { icon: "key", label: "Serah Terima Kunci Tepat Waktu" },
 ];
 
 export const DISTANCES: Distance[] = [
-  { icon: "🛣️", place: "Pintu Tol Bekasi Timur", dist: "2.6 km" },
-  { icon: "🚉", place: "LRT Jati Mulya", dist: "2.8 km" },
-  { icon: "🏥", place: "RS Ananda Tambun Selatan", dist: "1 km" },
-  { icon: "🛍️", place: "Bekasi Trade Center Mall 2", dist: "2.8 km" },
-  { icon: "🏥", place: "Mitra Keluarga Bekasi", dist: "3.2 km" },
-  { icon: "🚂", place: "Stasiun Kereta Bekasi Timur", dist: "4.8 km" },
+  { icon: "road", place: "Pintu Tol Bekasi Timur", dist: "2.6 km" },
+  { icon: "train", place: "LRT Jati Mulya", dist: "2.8 km" },
+  { icon: "hospital", place: "RS Ananda Tambun Selatan", dist: "1 km" },
+  { icon: "shop", place: "Bekasi Trade Center Mall 2", dist: "2.8 km" },
+  { icon: "hospital", place: "Mitra Keluarga Bekasi", dist: "3.2 km" },
+  { icon: "train", place: "Stasiun Kereta Bekasi Timur", dist: "4.8 km" },
 ];
 
 export const UNIT_SAMPLES: UnitSample[] = [
@@ -53,8 +65,8 @@ export const UNIT_SAMPLES: UnitSample[] = [
 ];
 
 export const BADGE_COLORS: Record<UnitSample["badge"], BadgeStyle> = {
-  "Premium":     { bg: "#FFF0E0", color: "#C47D4A", border: "#EDD9C5" },
-  "Populer":     { bg: "#E0F0FF", color: "#2563EB", border: "#BFDBFE" },
-  "Luas":        { bg: "#E0F5E8", color: "#16A34A", border: "#BBF7D0" },
-  "Terjangkau":  { bg: "#F3F4F6", color: "#6B7280", border: "#E5E7EB" },
+  "Premium":     { bg: "#E7ECFB", color: "#2454D6", border: "#D3DCF6" },
+  "Populer":     { bg: "#E4EEF9", color: "#2563EB", border: "#CBD8EA" },
+  "Luas":        { bg: "#E7F1E3", color: "#16A34A", border: "#CFE4C8" },
+  "Terjangkau":  { bg: "#EEEEF0", color: "#5B6169", border: "#E3E6E2" },
 };
