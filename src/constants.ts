@@ -66,7 +66,7 @@ export const UNIT_SAMPLES: UnitSample[] = [
 
 export const BADGE_COLORS: Record<UnitSample["badge"], BadgeStyle> = {
   "Premium":     { bg: "#E7ECFB", color: "#2454D6", border: "#D3DCF6" },
-  "Populer":     { bg: "#E4EEF9", color: "#2563EB", border: "#CBD8EA" },
-  "Luas":        { bg: "#E7F1E3", color: "#16A34A", border: "#CFE4C8" },
+  "Populer":     { bg: "#E4EEF9", color: "#1D4ED8", border: "#CBD8EA" },
+  "Luas":        { bg: "#E7F1E3", color: "#166534", border: "#CFE4C8" },
   "Terjangkau":  { bg: "#EEEEF0", color: "#5B6169", border: "#E3E6E2" },
 };
