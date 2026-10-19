@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {
-  ShieldCheck, Train, Leaf, Mosque, RoadHorizon, FirstAidKit, Storefront,
+  Train, Leaf, Mosque, RoadHorizon, FirstAidKit, Storefront,
   MapPin, Phone, Envelope, CheckCircle, ArrowRight, Certificate, Lightning, Drop, Key,
 } from "@phosphor-icons/react";
 import { BADGE_COLORS, DISTANCES, FACILITIES, FACILITY_HIGHLIGHTS, NAV_LINKS, UNIT_SAMPLES } from "./constants";
@@ -23,7 +23,7 @@ function useInView(threshold = 0.1) {
   return [ref, visible];
 }
 
-const FAC_ICONS = { shield: ShieldCheck, train: Train, leaf: Leaf, mosque: Mosque };
+const FAC_ICONS = { road: RoadHorizon, train: Train, leaf: Leaf, mosque: Mosque };
 const HIGHLIGHT_ICONS = { certificate: Certificate, lightning: Lightning, drop: Drop, key: Key };
 const DIST_ICONS = { road: RoadHorizon, train: Train, hospital: FirstAidKit, shop: Storefront };
 const CONTACT_ICONS = { phone: Phone, mail: Envelope, pin: MapPin };
@@ -284,14 +284,14 @@ export default function App() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <span className={`fade-up ${facVisible ? "in" : ""}`} style={{ ...S.pill, display: "block", width: "fit-content", margin: "0 auto 14px" }}>Fasilitas Kawasan</span>
           <h2 className={`fade-up ${facVisible ? "in" : ""}`} style={S.h2}>Dibangun untuk Kenyamanan Keluarga</h2>
-          <p className={`fade-up d1 ${facVisible ? "in" : ""}`} style={S.sub}>Satu gerbang akses, lingkungan yang terjaga, dan fasilitas ibadah — semua tertata dalam satu kawasan Jatimulya Regency.</p>
+          <p className={`fade-up d1 ${facVisible ? "in" : ""}`} style={S.sub}>Jalan kawasan yang teduh, lingkungan asri, dan fasilitas ibadah — semua tertata dalam satu kawasan Jatimulya Regency.</p>
 
           <div className={`bento fade-up d2 ${facVisible ? "in" : ""}`}>
             {/* big — security, image */}
             <div className="bento-cell area-big lift" style={{ minHeight: 320 }}>
-              <img className="bento-img" loading="lazy" src="/images/fasilitas-gerbang.jpg" alt={FACILITIES[0].title} />
+              <img className="bento-img" loading="lazy" src="/images/fasilitas-jalan.jpg" alt={FACILITIES[0].title} />
               <div className="bento-scrim" />
-              <span className="bento-tag">{(() => { const I = FAC_ICONS[FACILITIES[0].icon]; return <I size={13} weight="bold" />; })()} 24/7</span>
+              <span className="bento-tag">{(() => { const I = FAC_ICONS[FACILITIES[0].icon]; return <I size={13} weight="bold" />; })()} Teduh</span>
               <div className="bento-text">
                 <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
                   <span style={S.bentoIconOnDark}>{(() => { const I = FAC_ICONS[FACILITIES[0].icon]; return <I size={22} weight="regular" />; })()}</span>
