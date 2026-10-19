@@ -31,7 +31,7 @@ export interface BadgeStyle {
 export const NAV_LINKS: string[] = ["Home", "Fasilitas", "Unit", "Lokasi", "Kontak"];
 
 export const FACILITIES: Facility[] = [
-  { icon: "shield", title: "One Gate System 24 Jam", text: "Satu akses masuk-keluar kawasan dengan pos jaga dan petugas keamanan berpatroli sepanjang hari." },
+  { icon: "road", title: "Jalan Kawasan Teduh & Rapi", text: "Jalan aspal mulus dengan pepohonan rindang di sepanjang kawasan, nyaman untuk jalan kaki dan bersepeda bersama keluarga." },
   { icon: "train", title: "10 Menit ke Tol & LRT", text: "Pintu Tol Bekasi Timur dan Stasiun LRT Jatimulya dapat ditempuh singkat dari gerbang perumahan." },
   { icon: "leaf", title: "Ruang Terbuka Hijau", text: "Taman kawasan dan jalur pejalan kaki yang teduh, dirancang untuk aktivitas keluarga sehari-hari." },
   { icon: "mosque", title: "Masjid JMR", text: "Fasilitas ibadah lengkap di dalam kawasan perumahan untuk kenyamanan warga." },
