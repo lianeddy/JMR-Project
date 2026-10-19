@@ -243,7 +243,7 @@ export default function App() {
 
           {/* Visual */}
           <div className={`hero-visual fade-up d2 ${heroVisible ? "in" : ""}`}>
-            <img src="https://picsum.photos/seed/jatimulya-kavling-plot/760/920" alt="Kavling siap bangun Jatimulya Regency" loading="eager" />
+            <img src="/images/hero-kavling.jpg" alt="Kavling siap bangun Jatimulya Regency" loading="eager" />
             <div className="hero-floater float-badge" style={{ animation: "float 5s ease-in-out infinite" }}>
               <div style={S.heroCard}>
                 <span style={S.heroCardIcon}><MapPin size={18} weight="regular" /></span>
@@ -289,7 +289,7 @@ export default function App() {
           <div className={`bento fade-up d2 ${facVisible ? "in" : ""}`}>
             {/* big — security, image */}
             <div className="bento-cell area-big lift" style={{ minHeight: 320 }}>
-              <img className="bento-img" loading="lazy" src="https://picsum.photos/seed/jatimulya-security-gate/700/620" alt={FACILITIES[0].title} />
+              <img className="bento-img" loading="lazy" src="/images/fasilitas-gerbang.jpg" alt={FACILITIES[0].title} />
               <div className="bento-scrim" />
               <span className="bento-tag">{(() => { const I = FAC_ICONS[FACILITIES[0].icon]; return <I size={13} weight="bold" />; })()} 24/7</span>
               <div className="bento-text">
@@ -318,7 +318,7 @@ export default function App() {
             </div>
             {/* wide — environment, image */}
             <div className="bento-cell area-wide lift" style={{ minHeight: 320 }}>
-              <img className="bento-img" loading="lazy" src="https://picsum.photos/seed/jatimulya-green-park/700/620" alt={FACILITIES[2].title} />
+              <img className="bento-img" loading="lazy" src="/images/fasilitas-taman.jpg" alt={FACILITIES[2].title} />
               <div className="bento-scrim" />
               <span className="bento-tag">{(() => { const I = FAC_ICONS[FACILITIES[2].icon]; return <I size={13} weight="bold" />; })()} RTH</span>
               <div className="bento-text">
@@ -366,7 +366,7 @@ export default function App() {
 
           {/* Featured unit */}
           <div className={`unit-featured fade-up d3 ${unitVisible ? "in" : ""}`}>
-            <img src="https://picsum.photos/seed/jatimulya-unit-featured/380/380" alt={`Blok ${featured.blok}`} />
+            <img src="/images/unit-unggulan.jpg" alt={`Blok ${featured.blok}`} />
             <div style={{ flex: 1 }}>
               <h3 style={{ fontFamily: "Outfit", fontSize: 26, fontWeight: 700, marginBottom: 10 }}>
                 Unit Unggulan <span style={{ color: "var(--color-accent-on-dark)" }}>— Blok {featured.blok}</span>
@@ -434,7 +434,7 @@ export default function App() {
             </div>
 
             <div className="loc-panel">
-              <img src="https://picsum.photos/seed/jatimulya-neighborhood-street/560/700" alt="Lingkungan Jatimulya Regency" />
+              <img src="/images/lokasi-lingkungan.jpg" alt="Lingkungan Jatimulya Regency" />
               <div className="loc-panel-scrim" />
               <div className="loc-panel-text">
                 <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
